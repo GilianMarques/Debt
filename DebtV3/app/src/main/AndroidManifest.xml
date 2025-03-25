@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gmarques.debtv3">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <application
+        android:name=".Debt"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.login.projetobase.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activities.NubankActivity"
+            android:label="@string/Faturanubank" />
+
+        <activity android:name=".activities.Transacoes" />
+
+        <activity
+            android:name=".activities.TermosDeUso"
+            android:theme="@style/AppTheme.ComFundo" />
+
+        <activity
+            android:name=".activities.Login"
+            android:theme="@style/AppTheme.ComFundo" />
+
+        <activity android:name=".activities.AnuncioPremiado" />
+
+        <activity android:name=".activities.ADM" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5724163948094960~3047578089" />
+
+        <activity
+            android:name=".activities.Falha"
+            android:label="Falha"
+            android:theme="@style/AppTheme.ComFundo"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name=".activities.ExportarRelatorio" />
+
+        <service
+            android:name=".sincronismo.ServicoDeSincronismo"
+            android:enabled="true"
+            android:foregroundServiceType="dataSync"
+            android:exported="true" />
+
+        <service
+            android:name=".notificacoes_nubank.ReceberNotificacoesNubank"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".broadcast_e_servicos.AppBroadcast"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="sinc" />
+                <action android:name="notificar_tarde" />
+                <action android:name="notificar_manha" />
+                <action android:name="notificar_relatorio_do_dia" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".notificacoes_nubank.FaturaNubank$AtualizarFatura"
+            android:exported="true" />
+
+        <activity android:name=".activities.ver_despesas.VerDespesas" />
+
+        <activity
+            android:name=".activities.add_edit_receitas.AddEditReceitas"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activities.add_edit_despesas.AddEditDespesas"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".activities.dashboard.MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.ComFundo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.add_edit_categorias.VerCategorias" />
+
+        <activity
+            android:name=".activities.add_edit_categorias.AddEditCategoria"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".activities.ver_receitas.VerReceitas" />
+
+        <activity android:name=".activities.relatorio_do_dia.RelatorioDoDiaAct" />
+
+        <activity
+            android:name=".activities.BackupERestauraçao"
+            android:label="@string/Backuperestauracao" />
+
+        <activity
+            android:name=".activities.perfil.Perfil"
+            android:label="@string/Perfil" />
+
+        <activity android:name=".activities.NotificarHora" />
+
+        <activity android:name=".activities.VerContas" />
+    </application>
+
+</manifest>

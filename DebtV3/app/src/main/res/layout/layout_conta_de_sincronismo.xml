@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivFotoDePerfil"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/back_circulo_grande_branco"
+        android:elevation="5dp"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tvNomeUsuario"
+        fontPath="ProductSansBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:padding="4dp"
+        android:text="Nome do usuario"
+        android:textAlignment="center"
+        android:textColor="?appTextPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/ivFotoDePerfil"
+        app:layout_constraintTop_toTopOf="@id/ivFotoDePerfil"
+        tools:ignore="HardcodedText,MissingPrefix" />
+
+    <!--suppress AndroidUnknownAttribute -->
+    <TextView
+        android:id="@+id/tvAnfitriao"
+        fontPath="ProductSansBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/back_retangulo_mes"
+
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="2dp"
+        android:text="Anfitrião"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNomeUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvNomeUsuario"
+        app:layout_constraintTop_toTopOf="@id/tvNomeUsuario"
+
+        tools:ignore="HardcodedText,MissingPrefix" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        fontPath="ProductSansBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="4dp"
+        android:text="email"
+        android:textAlignment="center"
+        android:textColor="?appTextSecondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/ivFotoDePerfil"
+        app:layout_constraintTop_toBottomOf="@id/tvNomeUsuario"
+        tools:ignore="HardcodedText,MissingPrefix" />
+</androidx.constraintlayout.widget.ConstraintLayout>

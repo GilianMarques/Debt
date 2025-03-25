@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:cardBackgroundColor="?attr/appCardBackground"
+        app:cardCornerRadius="@dimen/app_card_raio"
+        app:cardElevation="@dimen/app_card_elevation"
+        app:contentPadding="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/vec_objetivo" />
+
+            <TextView
+                android:id="@+id/tvNomeConta"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:text="Nubank"
+                android:textAlignment="gravity"
+                android:textColor="?attr/appTextPrimary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivStatus"
+                app:layout_constraintStart_toEndOf="@id/ivStatus"
+                app:layout_constraintTop_toTopOf="@id/ivStatus"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvValorConta"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:text="R$ 350,22"
+                android:textAlignment="gravity"
+                android:textColor="?attr/appTextPrimary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivStatus"
+                app:layout_constraintStart_toEndOf="@id/tvNomeConta"
+                app:layout_constraintTop_toTopOf="@id/ivStatus"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvPeriodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:text="8 ago 20 - em aberto"
+                android:textAlignment="gravity"
+                android:textColor="?attr/appTextPrimary"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivStatus"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

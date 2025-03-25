@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="false"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:animateLayoutChanges="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="4"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:maxWidth="90dp"
+                android:minHeight="69dp"
+                android:text="7"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btnDot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:maxWidth="90dp"
+                android:minHeight="69dp"
+                android:text="."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:animateLayoutChanges="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="2"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="5"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:maxWidth="90dp"
+                android:minHeight="69dp"
+                android:text="8"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:animateLayoutChanges="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="3"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="6"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:maxWidth="90dp"
+                android:minHeight="69dp"
+                android:text="9"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btnEqual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="="
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:animateLayoutChanges="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text= "c"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="÷"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:maxWidth="90dp"
+                android:minHeight="69dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="-"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/btnMult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:minHeight="69dp"
+                android:text="x"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@drawable/calculadora_selector_cor_do_texto"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

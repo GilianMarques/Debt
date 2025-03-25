@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8000FF</color>
+    <color name="colorPrimaryA5">#0D8000FF</color>
+    <color name="colorPrimaryA15">#268000FF</color>
+    <color name="colorPrimaryA30">#4D8000FF</color>
+    <color name="colorPrimaryA60">#998000FF</color>
+    <color name="colorPrimaryDark">#8000FF</color>
+    <color name="colorAccent">#E91E63</color>
+
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#80000000</color>
+
+
+    <color name="branco">#FFFFFF</color>
+    <color name="brancoA80">#CCFFFFFF</color>
+    <color name="brancoA50">#80FFFFFF</color>
+    <color name="brancoA10">#1AFFFFFF</color>
+    <color name="divisor">#F6F6F6</color>
+    <color name="cinza">#F0F0F0</color>
+    <color name="modo_de_testes">#DDDDDD</color>
+    <color name="windowBackground">#FAFAFA</color>
+
+    <!--Colours - 43 cores -->
+    <color name="flat_color_1">#5971ad</color>
+    <color name="flat_color_2">#767a85</color>
+    <color name="flat_color_3">#8c5de4</color>
+    <color name="flat_color_4">#f08080</color>
+    <color name="flat_color_5">#6495ed</color>
+    <color name="flat_color_6">#bb1224</color>
+    <color name="flat_color_7">#e5000f</color>
+    <color name="flat_color_8">#4372aa</color>
+    <color name="flat_color_9">#690562</color>
+    <color name="flat_color_10">#019875</color>
+    <color name="flat_color_11">#17899b</color>
+    <color name="flat_color_12">#ff1493</color>
+    <color name="flat_color_13">#d7aa33</color>
+    <color name="flat_color_14">#360b58</color>
+    <color name="flat_color_15">#e41f36</color>
+    <color name="flat_color_16">#63d64a</color>
+    <color name="flat_color_17">#2f70e1</color>
+    <color name="flat_color_18">#cc99cc</color>
+    <color name="flat_color_19">#38ed38</color>
+    <color name="flat_color_21">#50041c</color>
+    <color name="flat_color_22">#0d1a23</color>
+    <color name="flat_color_23">#da70d6</color>
+    <color name="flat_color_24">#63a1f7</color>
+    <color name="flat_color_25">#7ef27c</color>
+    <color name="flat_color_26">#cf64eb</color>
+    <color name="flat_color_27">#879fed</color>
+    <color name="flat_color_28">#ff5f9a</color>
+    <color name="flat_color_29">#ff69b4</color>
+    <color name="flat_color_30">#8ddaf7</color>
+    <color name="flat_color_31">#e9575f</color>
+    <color name="flat_color_32">#4de28c</color>
+    <color name="flat_color_33">#00b2ee</color>
+    <color name="flat_color_34">#6799aa</color>
+    <color name="flat_color_35">#be2625</color>
+    <color name="flat_color_36">#53d76a</color>
+    <color name="flat_color_37">#1ca0aa</color>
+    <color name="flat_color_38">#ff6347</color>
+    <color name="flat_color_39">#70dbdb</color>
+    <color name="flat_color_40">#bf5fff</color>
+    <color name="flat_color_41">#ddaa3b</color>
+    <color name="flat_color_42">#f2473f</color>
+    <color name="flat_color_43">#66a9fb</color>
+    <color name="transparent" >#00000000</color>
+</resources>

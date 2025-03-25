@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/windowParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?appWindowBackground"
+        tools:context=".activities.NubankActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.NubankActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/edtData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_edittext_contorno"
+                    android:ems="5"
+                    android:hint="Fechamento"
+                    android:maxLength="2"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned"
+                    android:padding="16dp" />
+
+                <EditText
+                    android:id="@+id/edtNomeDespesa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:hint="Nome da despesa"
+                    android:background="@drawable/back_edittext_contorno"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:subtitleTextColor="@color/brancoA80"
+                app:titleTextColor="@color/branco" />
+
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?colorPrimary"
+                android:padding="16dp"
+                android:text="Digite a baixo o nome da despesa que corresponde à fatura do nubank aqui no app e a data de fechamento da sua fatura (não é a data de vencimento). Escreva o nome de forma exata respeitando maiúsculas e minúsculas além de acentos e espaços."
+                android:textColor="@color/branco"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+            <Button
+
+                android:id="@+id/btnRevogar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/back_edittext_fundo"
+                android:padding="8dp"
+                android:text="@string/revogar_acesso_s_notifica_es"
+                android:textColor="@color/branco"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

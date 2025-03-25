@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_margin="64dp" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/Digiteoenderecodeemaiparaquemdesejaenviarasolicitacao"
+        android:textColor="?appTextPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/back_edittext_contorno"
+        android:drawableStart="@drawable/vec_email"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailSubject"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="?appTextPrimary" />
+
+    <!--suppress AndroidUnknownAttribute -->
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="bla bla bla"
+        android:textAlignment="center"
+        android:textColor="?appTextPrimary"
+        android:textSize="18sp"
+        android:visibility="gone"
+        tools:ignore="MissingPrefix" />
+
+    <!--suppress AndroidUnknownAttribute -->
+    <Button
+        android:id="@+id/btnConfirmarConvite"
+        fontPath="ProductSansBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/back_edittext_contorno"
+        android:drawableStart="@drawable/vec_enviar"
+        android:drawablePadding="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/Enviarconvite"
+        android:textColor="?colorPrimary"
+        android:visibility="gone"
+        tools:ignore="MissingPrefix" />
+
+
+    <!--suppress AndroidUnknownAttribute -->
+    <Button
+        android:id="@+id/btnConcluido"
+        fontPath="ProductSansBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/back_edittext_contorno"
+        android:drawableStart="@drawable/vec_check"
+        android:drawablePadding="16dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/Concluido"
+        android:textColor="?colorPrimary"
+        tools:ignore="MissingPrefix" />
+</LinearLayout>

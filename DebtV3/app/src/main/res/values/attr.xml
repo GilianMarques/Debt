@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="appTextPrimary" format="reference" />
+    <attr name="appTextSecondary" format="reference" />
+
+    <attr name="appCardBackground" format="reference" />
+    <attr name="appWindowBackground" format="reference" />
+
+
+</resources>

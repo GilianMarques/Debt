@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/windowParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorAccent"
+        >
+
+        <LinearLayout
+            android:id="@id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?appWindowBackground"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:subtitleTextColor="@color/brancoA80"
+                app:titleTextColor="@color/branco" />
+
+            <Switch
+                android:id="@+id/sAdm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Privilégios de administrador" />
+
+            <Switch
+                android:id="@+id/sAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Desativar anúncios" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

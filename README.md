@@ -1,0 +1,2 @@
+Este projeto foi iniciado por volta de 2020 e foi feito baseado em versões de gestores financeiros que datam de 2016.
+Seu código foi originalmente feito em java mas será gradualmente migrado para kotlin.

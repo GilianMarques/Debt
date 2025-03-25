@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/windowParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorPrimary"
+        tools:context=".activities.ExportarRelatorio">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?appWindowBackground">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintTop_toTopOf="parent"
+                app:subtitleTextColor="@color/brancoA80"
+                app:titleTextColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/edtInfo"
+                fontPath="ProductSansBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="16dp"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:text="@string/Selecioneumintervalo"
+                android:textColor="?appTextPrimary"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+            <EditText
+                android:id="@+id/edt_comeco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_edittext_contorno"
+                android:drawableStart="@drawable/vec_periodo"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/Inicio"
+                android:inputType="none"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:singleLine="true"
+                app:layout_constraintTop_toBottomOf="@id/edtInfo" />
+
+            <EditText
+                android:id="@+id/edtFim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_edittext_contorno"
+                android:drawableStart="@drawable/vec_periodo"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/Fim"
+                android:inputType="none"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:singleLine="true"
+                app:layout_constraintTop_toBottomOf="@id/edt_comeco" />
+
+            <CalendarView
+                android:id="@+id/calendario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintBottom_toTopOf="@id/exportarTudo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtFim" />
+
+
+            <TextView
+                android:id="@+id/exportarTudo"
+                fontPath="ProductSansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/back_circulo_branco"
+                android:drawableStart="@drawable/vec_exportar_relatorio"
+                android:drawablePadding="12dp"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/exportar_tudo"
+                android:textAlignment="gravity"
+                android:textColor="?colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/guideLine" />
+
+            <TextView
+                android:id="@+id/exportar"
+                fontPath="ProductSansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/back_circulo_branco"
+                android:drawableStart="@drawable/vec_exportar_relatorio"
+                android:drawablePadding="12dp"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/exportar_intervalo"
+                android:textAlignment="gravity"
+                android:textColor="?colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideLine"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/guideLine"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

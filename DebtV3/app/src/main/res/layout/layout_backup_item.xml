@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/windowParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:drawableStart="@drawable/vec_backup"
+            android:drawablePadding="16dp"
+            android:textSize="18sp"
+            android:textColor="?colorPrimary"
+            android:ems="10"
+            android:gravity="center"
+            fontPath="ProductSansBold"
+            android:padding="16dp"
+            android:textAlignment="gravity" />
+    </FrameLayout>
+
+</layout>

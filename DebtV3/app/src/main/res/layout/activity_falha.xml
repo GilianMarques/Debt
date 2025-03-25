@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/windowParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorPrimary"
+        tools:context=".activities.Falha">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?appWindowBackground">
+
+
+            <TextView
+                android:id="@+id/tvInfo"
+                fontPath="ProductSansBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?colorPrimary"
+                android:paddingStart="8dp"
+                android:paddingTop="40dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="24dp"
+                android:text="@string/Oappsofreuumafalhagraveeaopode"
+                android:textAlignment="textStart"
+                android:textColor="@color/branco"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/edtFalha"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/cinza"
+                android:gravity="start"
+                android:padding="8dp"
+                android:textColor="?appTextPrimary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+
+            <TextView
+                android:id="@+id/tvEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/back_retangulo_categoria_concluir_btn"
+                android:drawableStart="@drawable/vec_send"
+                android:drawablePadding="8dp"
+                android:elevation="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/Enviar"
+                android:textAllCaps="true"
+                android:textColor="?colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

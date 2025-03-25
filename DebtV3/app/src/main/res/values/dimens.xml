@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_card_raio">4dp</dimen>
+    <dimen name="app_card_elevation">1dp</dimen>
+    <dimen name="sp_base">1sp</dimen>
+    <dimen name="dp_base">1dp</dimen>
+
+</resources>

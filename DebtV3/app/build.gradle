@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'realm-android'
+
+android {
+    compileSdk 34
+    namespace 'gmarques.debtv3'
+
+    defaultConfig {
+        applicationId "gmarques.debtv3"
+        minSdkVersion 27
+        targetSdkVersion 35
+        versionCode 17
+        versionName "1.7"
+        android.buildFeatures.dataBinding = true
+        android.buildFeatures.buildConfig = true
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            versionNameSuffix ' - release'
+        }
+
+        debug {
+            minifyEnabled false
+            versionNameSuffix ' - debug'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'joda-time:joda-time:2.10.2'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads:24.1.0'
+    implementation 'com.google.android.gms:play-services-auth:21.3.0'
+
+    // firebase
+    implementation platform('com.google.firebase:firebase-bom:33.11.0') // ou versão mais recente
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-auth'
+
+    implementation 'io.realm:realm-gradle-plugin:10.19.0'
+
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+
+    //Yoyo.with...
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    // sharedPrefs for lazy
+    implementation 'com.pixplicity.easyprefs:EasyPrefs:1.10.0'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    /*verificar se removo ou nao mpandroidchart p substituir por hellocharts*/
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+
+    implementation 'com.github.florent37:shapeofview:1.0.7'
+
+    /*rtime permissoes*/
+    implementation 'com.karumi:dexter:6.1.2'
+
+
+}
+//resolver treta do calligraphy
+//https://stackoverflow.com/questions/56524914/crash-on-android-10-inflateexception-in-layout-abc-screen-simple-line-17
+//https://www.google.com/search?q=Duplicate+class+org.intellij.lang.annotations.Flow+found+in+modules+jetified-annotations-13.0.jar+(org.jetbrains%3Aannotations%3A13.0)+and+jetified-annotations-java5-15.0.jar+(org.jetbrains%3Aannotations-java5%3A15.0)&rlz=1C1CHBD_pt-PTBR912BR912&oq=Duplicate+class+org.intellij.lang.annotations.Flow+found+in+modules+jetified-annotations-13.0.jar+(org.jetbrains%3Aannotations%3A13.0)+and+jetified-annotations-java5-15.0.jar+(org.jetbrains%3Aannotations-java5%3A15.0)&aqs=chrome..69i57.918j0j4&sourceid=chrome&ie=UTF-8

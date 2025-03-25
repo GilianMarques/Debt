@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="200dp"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+
+        <TextView
+            android:id="@+id/tvVerContas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vec_conta_banco"
+            android:drawablePadding="24dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="@string/Vercontas"
+            android:textAlignment="gravity"
+            android:textColor="?appTextPrimary" />
+
+        <TextView
+            android:id="@+id/tvVerCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vec_categoria"
+            android:drawablePadding="24dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="@string/Vercategorias"
+            android:textAlignment="gravity"
+            android:textColor="?appTextPrimary" />
+
+        <TextView
+            android:id="@+id/trocarDeMes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vec_data"
+            android:drawablePadding="24dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="@string/Trocardemes"
+            android:textAlignment="gravity"
+            android:textColor="?appTextPrimary" />
+
+        <TextView
+            android:id="@+id/exportarRelatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vec_exportar_relatorio"
+            android:drawablePadding="24dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="@string/Exportarrelatorio"
+            android:textAlignment="gravity"
+            android:textColor="?appTextPrimary" />
+
+        <TextView
+            android:id="@+id/backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vec_backup"
+            android:drawablePadding="24dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="@string/Backuperestauracao"
+            android:textAlignment="gravity"
+            android:textColor="?appTextPrimary" />
+
+        <TextView
+            android:id="@+id/sincronizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vec_sinc"
+            android:drawablePadding="24dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="@string/Sincronizaragora"
+            android:textAlignment="gravity"
+            android:textColor="?appTextPrimary" />
+
+        <TextView
+            android:id="@+id/tvImportarNubank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vec_import"
+            android:drawablePadding="24dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="@string/Importardonubank"
+            android:textAlignment="gravity"
+            android:textColor="?appTextPrimary" />
+
+
+        <TextView
+            android:id="@+id/suspenderAnuncios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/vec_suspender_anuncios"
+            android:drawablePadding="24dp"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:text="@string/Suspenderanuncios"
+            android:textAlignment="gravity"
+            android:textColor="?appTextPrimary" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

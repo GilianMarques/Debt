@@ -1,0 +1,12 @@
+Debt foi desenvolvido para que você tenha controle  do seu dinheiro mês-a-mês sem complicações. Nosso app oferece uma interface limpa e amigavel para que você tenha o maxímo de facilidade  gerenciando as receitas e despesas do seu mês com gráficos e análises da sua situação financeira atual pra te ajudar no controle dos seus gastos. 
+   
+Aqui você tem:
+
+• Interface atraente e amigável
+• Detalhes dos seus gastos na medida certa
+• Gestão de despesas e receitas parceladas 
+• Backup na nuvem (e local) e sincronismo de dados entre vários usuarios
+• Exportação de relatórios em CSV (para uso no Excel)
+• Entre outras funcionalidades.
+
+Esta cansado de soluções ineficientes e/ou complexas para lidar com seu dinheiro? Experimente o Debt agora mesmo!

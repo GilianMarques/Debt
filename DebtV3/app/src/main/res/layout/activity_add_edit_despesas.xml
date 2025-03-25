@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/windowParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?colorPrimary">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:background="?appWindowBackground"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_concluir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:elevation="50dp"
+                android:focusable="true"
+                android:src="@drawable/vec_check"
+                app:backgroundTint="@color/branco"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintTop_toTopOf="parent"
+                app:subtitleTextColor="@color/brancoA80"
+                app:titleTextColor="@color/branco" />
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:elevation="0dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="80dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_recorrente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+
+                            android:background="@drawable/back_btn_selector"
+                            android:elevation="5dp"
+                            android:text="@string/Despesarecorrente"
+                            android:textColor="@drawable/btn_selector_cor_do_texto" />
+
+                        <Button
+                            android:id="@+id/btn_pago"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/back_btn_selector"
+                            android:elevation="5dp"
+                            android:text="@string/Despesapaga"
+                            android:textColor="@drawable/btn_selector_cor_do_texto" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:animateLayoutChanges="true"
+                        android:background="@drawable/back_edittext_contorno"
+                        tools:context=".activities.main_activity.MainActivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:animateLayoutChanges="true"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/ivImportar"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="8dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginEnd="8dp"
+                                android:background="?selectableItemBackground"
+                                android:elevation="5dp"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/vec_check" />
+
+                            <EditText
+                                android:id="@+id/edtNomeSugestao"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00673AB7"
+                                android:drawableStart="@drawable/vec_editar"
+                                android:drawablePadding="16dp"
+                                android:focusable="false"
+                                android:inputType="textCapSentences"
+                                android:maxLines="1"
+                                android:padding="16dp" />
+
+                            <EditText
+                                android:id="@+id/edtNome"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00673AB7"
+                                android:drawableStart="@drawable/vec_editar"
+                                android:drawablePadding="16dp"
+                                android:ems="10"
+                                android:hint="@string/Nome"
+                                android:imeOptions="flagNavigateNext"
+                                android:inputType="textCapSentences"
+                                android:maxLines="1"
+                                android:padding="16dp"
+                                android:singleLine="true" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtValor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/back_edittext_contorno"
+                        android:drawableStart="@drawable/vec_valor"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:hint="@string/Valor"
+                        android:inputType="numberDecimal|textNoSuggestions"
+                        android:maxLines="1"
+                        android:padding="16dp" />
+
+
+                    <EditText
+                        android:id="@+id/edtPgto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_edittext_contorno"
+                        android:drawableStart="@drawable/vec_data"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:hint="@string/Datadopagamento"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:padding="16dp"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/edtDataEmQueFoiPago"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_edittext_contorno"
+                        android:drawableStart="@drawable/vec_data"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:hint="@string/Dataemquefoipaga"
+                        android:inputType="none"
+                        android:maxLines="1"
+                        android:padding="16dp"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/edtParcelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_edittext_contorno"
+                        android:drawableStart="@drawable/vec_parcelas"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:hint="@string/ParcelasDica"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="16dp" />
+
+
+                    <EditText
+                        android:id="@+id/edtObs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back_edittext_contorno"
+                        android:drawableStart="@drawable/vec_observacoes"
+                        android:drawablePadding="16dp"
+                        android:ems="10"
+                        android:gravity="start|center_vertical"
+                        android:hint="@string/Observacoes"
+                        android:imeOptions="normal"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="3000"
+                        android:maxLines="60"
+                        android:padding="16dp"
+                        android:textAlignment="gravity" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/rvCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+</layout>
